@@ -1,0 +1,149 @@
+/*main menu*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#dddddd;
+    background-size: cover;
+}
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul, 
+.menu ol{  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu > ul{
+    display: flex;
+    background: rgb(179, 24, 24);
+}
+
+.menu > ul li a{
+    display: block;
+    
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
+    color:rgb(255, 217, 93);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu >ul li:last-child{
+    margin-left: auto;
+}
+
+.menu li a:hover{
+    background: #881e1e;
+    box-shadow: 1px 2px 5px -2px black;
+    transition: all 0.5s ease;
+}
+
+/*submenu*/
+.menu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+
+.menu li > ul li a{
+    background: #881e1e;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+/*modal-popup*/
+
+.modal{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.5);
+    z-index:100;
+    opacity:0;
+    pointer-events: none;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup{
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 2%;
+    background: rgb(255, 254, 254);
+    border: 2px solid #881e1e;
+}
+
+.popup h3{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #131320;    
+}
+
+.popup p{
+    text-align: center;
+    padding: 0;
+    margin: 4% 0 8% 0;
+    color: #131320;
+}
+
+.log__in{
+    display: block;
+    color: #fff;
+    background: #881e1e;
+    padding: 2%;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.reg {
+    display: block;
+    color: #fff;
+    background: #881e1e;
+    padding: 2%;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container {
+    position: center;
+    width: 60vw;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    
+}
+
+.item {
+    border: 1px solid red;
+    margin: 5px;
+    background-color:rgb(153, 151, 151);
+    height: 250px;
+}
+

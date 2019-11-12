@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flex.css">
+    <title>flexbox</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">главная</a></li>
+                <li><a href="#">статьи</a>
+                    <ul>
+                        <li><a href="#">новости</a></li>
+                        <li><a href="#">история</a></li>
+                        <li><a href="#">техника</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">команды</a></li>
+                <li><a href="#">форум</a></li>
+                <li><a href="#exit">вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="exit" class="modal">
+        <div class="popup">
+            <h3>ВХОД</h3>
+            <p>Хотите выйти?</p>
+            <p align="center">
+                <label for="login"></label>
+                <input id="login" type="login" name="login" required minlength="3" maxlength="12" placeholder="Введите логин"></input>
+            </p>
+            <p align="center">
+                <label for="login"></label>
+                <input id="login" type="login" name="login" required minlength="3" maxlength="12" placeholder="Введите пароль"></input>
+            </p>   
+            <a href="#" class="log__in">ВОЙТИ</a>
+            <br>
+            <a class="reg" href="registration.html">Зарегистрироваться</a>
+        </div>    
+    </div>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+        <div class="item item7"></div>
+        <div class="item item8"></div>
+    </div>
+</body>
+</html>
