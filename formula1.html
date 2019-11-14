@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flex.css">
+    <title>formula 1</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">главная</a></li>
+                <li><a href="#">статьи</a>
+                    <ul>
+                        <li><a href="#">новости</a></li>
+                        <li><a href="#">история</a></li>
+                        <li><a href="#">техника</a></li>
+                        <li><a href="#">регламент</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">команды</a></li>
+                <li><a href="#">расписание</a></li>
+                <li><a href="#exit">вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="exit" class="modal">
+        <div class="popup">
+            <h3>ВХОД</h3>
+            <p>Хотите выйти?</p>
+            <p align="center">
+                <label for="login"></label>
+                <input id="login" type="login" name="login" required minlength="3" maxlength="12" placeholder="Введите логин"></input>
+            </p>
+            <p align="center">
+                <label for="login"></label>
+                <input id="login" type="login" name="login" required minlength="3" maxlength="12" placeholder="Введите пароль"></input>
+            </p>   
+            <a href="#" class="log__in">ВОЙТИ</a>
+            <br>
+            <a class="reg" href="registration.html">Зарегистрироваться</a>
+        </div>    
+    </div>
+    <div class="container">
+        <div class="item item1"><a href="#" class="news1"><img class="main-img" src="img/ferrarif1.jpg" alt=""></a> 
+            <span>Шарль Леклер начнет гонку в Бразилии с конца стартовой решетки из-за замены силового агрегата.</span>               
+        </div>
+        <div class="item item2"> <a href="#" class="news2"><img src="img/mersedes1.jpg" alt=""></a>
+            <span>Льюис Хэмильтон завоевывает 6-й чемпионский титул.</span>
+        </div>
+        <div class="item item3"> <a href="#" class="news3"> <img src="img/red-bull1.jpg" alt=""></a>
+            <span>'Дождь может сыграть нам на руку' - Ферстаппен о шансах на подиум в Бразилии.</span>
+        </div>
+        <div class="item item4"> <a href="#" class="news4"> <img src="img/alfa1.jpg" alt=""></a>   
+            <span>Кими Райкконен: Мы боролись от старта до финиша.</span>
+        </div>
+    </div>
+</body>
+</html>
